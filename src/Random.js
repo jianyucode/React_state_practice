@@ -14,8 +14,7 @@ class Random extends Component {
     return (
       <div>
         <h1>Number is {this.state.num}</h1>
-        {this.state.num === 7 && <h2>You WIN!!!</h2>}
-        {this.state.num !==7 && <button onClick={this.randomNumber}>Click me for random number</button>}
+        {this.state.num === 7 ? <h2>You WIN!!!</h2> : <button onClick={this.randomNumber}>Click me for random number</button>}
       </div>
     )
   }
